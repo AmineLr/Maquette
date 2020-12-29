@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>PARTIE III - RESPONSIVE DESIGN</title>
+</head>
+    <!-- SITE HEADER -->
+    <header class="site-header">
+        <div class="container ">
+            <a href="#" class="logo"><img src="images/logo.svg" alt=""></a>
+            <nav class="main-navigation">
+                <a href="#">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Our services</a>
+                <a href="#">Tour package</a>
+            </nav>
+            <a class="hamburger" href="#">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO -->
+        <section class="hero center">
+            <div class="hero-content">
+                <span class="hero-price">From $199/Person</span>
+                <h1 class="hero-title">Discover Greece</h1>
+                <h2 class="hero-subtitle">Travel with unique experience</h2>
+            </div>
+        </section>
+        <!-- ICONS -->
+        <section class="center">
+            <ul class="flexbox justify-around container nobullets flex-wrap">
+                <li class="icon-block">
+                    <img src="images/ico-1.svg" alt="">
+                    <p class="item-text"><span class="bump lato">120,859 </span>Happy Travellers</p>
+                </li>
+                <li class="icon-block">
+                    <img src="images/ico-2.svg" alt="">
+                    <p class="item-text"><span class="bump lato">2594</span>Satisfied Tours</p>
+                </li>
+                <li class="icon-block">
+                    <img src="images/ico-3.svg" alt="">
+                    <p class="item-text"><span class="bump lato">854</span>Destinations</p>
+                </li>
+                <li class="icon-block">
+                    <img src="images/ico-4.svg" alt="">
+                    <p class="item-text"><span class="bump lato">978</span>Hotels & Resorts</p>
+                </li>
+            </ul>
+        </section>
+        <!-- PRODUCTS -->
+        <section class="flexbox flex-wrap justify-center our-offers">
+            <header class="section-header wide center">
+                <span class="section-pretitle">We offer</span>
+                <h3 class="section-title wave-title">Popular Tour Package</h3>
+            </header>
+            <article class="item-product">
+                <img src="images/products/1.jpg" alt="">
+                <span class="item-category">Honeymoon</span>
+                <p class="item-price">$299/person</p>
+                <h4 class="item-title"><a href="#">Blue beauty of Greece</a> </h4>
+                <p class="item-duration">5days / 5nights</p>
+            </article>
+            <article  class="item-product">
+                <img src="images/products/2.jpg" alt="">
+                <span class="item-category">Holiday</span>
+                <p class="item-price">$178/person</p>
+                <h4 class="item-title"><a href="#">Nature of Phuket</a></h4>
+                <p class="item-duration">5days / 5nights</p>
+            </article>
+            <article  class="item-product">
+                <img src="images/products/3.jpg" alt="">
+                <span class="item-category">Honeymoon</span>
+                <p class="item-price">$111/person</p>
+                <h4 class="item-title"><a href="#">World tour of Paris</a></h4>
+                <p class="item-duration">5days / 5nights</p>
+            </article>
+        </section>
+        <!-- CTA -->
+        <section class="cta hidden-mobile">
+            <h3 class="cta-title">Get 10% Off on Your Next Travel</h3>
+            <p class="cta-text">Maximum discount 1000$ per person</p>
+            <form action="" class="cta-form">
+                <input type="email" name="" placeholder="Enter your email" id="">
+                <input type="submit" value="Subscribe" class="btn btn-white">
+            </form>
+        </section>
+        <!-- MAP -->
+        <section class="iframe-container nopadding">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11118.77615850736!2d4.8263398!3d45.8374074!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5337bf11cf6fe662!2sMus%C3%A9e%20l&#39;Organe%20-%20La%20Demeure%20du%20Chaos!5e0!3m2!1sfr!2sfr!4v1607677474158!5m2!1sfr!2sfr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+    </main>
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+        <p class="copyright">tourism©All right reserved</p>
+    </footer>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- SCRIPTS -->
+    <script>
+        $(document).ready(function(){
+            $('.hamburger').click(function(){
+                $('.main-navigation').toggleClass('visible');
+            });
+        });
+    </script>
+</body>
+</html>
+
